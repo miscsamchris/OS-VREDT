@@ -1,0 +1,86 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> OS VREDT</title>
+  <link rel="icon" type="image/x-icon" href="{{url_for('static',filename='assets/favicon.ico')}}">
+  <style>
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #222222;
+      color: white;
+      text-align: center;
+    }
+
+    .footerImage {
+      height: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="{{url_for('Subject.addsubject')}}">OS V<span style="color:red">RED</span>T</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="{{url_for('Subject.addsubject')}}">Subject</a></li>
+        <li class="active"><a href="{{url_for('Topic.addtopic')}}">Topic</a></li>
+        <li><a href="{{url_for('Video.addvideo')}}">Video</a></li>
+        <li><a href="{{url_for('Video.addMeeting')}}">Meeting</a></li>
+
+      </ul>
+    </div>
+  </nav>
+  <script>
+    var count = 1;
+    function adddataitem() {
+      var x = document.getElementById("inputs");
+      var new_field = document.createElement("input");
+      new_field.setAttribute("type", "text");
+      new_field.setAttribute("class", "form-control input-lg");
+      new_field.setAttribute("name", "data_query" + count);
+      new_field.setAttribute("id", "data_query" + count);
+      var pos = x.childElementCount;
+      x.insertBefore(new_field, x.childNodes[pos]);
+      x.insertBefore(document.createElement("br"), x.childNodes[pos]);
+      count += 1;
+    }
+  </script>
+  <form method="POST">
+    <br>
+    <br>
+    <br>
+    <div class="col-md-8 col-md-offset-2">
+      {{ form.csrf_token }}
+      {{form.intent_name.label}}{{form.intent_name(class_="form-control input-lg")}}
+      <br>
+      {{form.intent_response.label}}{{form.intent_response(class_="form-control input-lg")}}
+      <br>
+      <label for="inputs">Intent Examples</label>
+      <div id="inputs">
+        <input class="form-control input-lg" id="data_query0" name="data_query0" type="text">
+        <br>
+      </div>
+      <button class="btn btn-success float-right" onclick="adddataitem(); return false;"> Add More Examples </button>
+      <br>
+      <br>
+      <br>
+      <center>{{form.submit(class_="btn btn-warning font-weight-bold")}}</center>
+      <br>
+    </div>
+  </form>
+  <div class="footer">
+    <p style="padding: 10px;">© 2020 Copyright: The Lone Samurai; Powered by <img
+        src="{{url_for('static',filename='assets/hashnode_logo.png')}}" alt="" class="footerImage"> X <img
+        src="{{url_for('static',filename='assets/planetscale_logo.png')}}" alt="" class="footerImage"></p>
+
+  </div>
+</body>
+
+</html>

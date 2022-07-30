@@ -1,0 +1,4 @@
+#Sun Jul 31 02:29:06 IST 2022
+base.0=D\:\\New Projects\\Planetscale\\VRApplication\\Temp\\gradleOut\\launcher\\build\\intermediates\\transforms\\dexMerger\\release\\0
+path.0=classes.dex
+renamed.0=classes.dex

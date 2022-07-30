@@ -1,0 +1,11 @@
+flask
+flask_restful
+wtforms
+flask_wtf
+flask_restful
+gunicorn
+pandas
+git+https://github.com/nficano/pytube
+mysqlclient
+requests
+flask_migrate
