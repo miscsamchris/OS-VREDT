@@ -7,4 +7,4 @@ def home():
 
 
 if __name__ == "__main__":
-    app.run(host="192.168.29.227",port=80)
+    app.run(host="HOSTNAME",port=80)

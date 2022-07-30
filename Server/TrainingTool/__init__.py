@@ -10,11 +10,11 @@ app.config["SECRET_KEY"] = SECRET_KEY
 api = Api(app=app)
 class Connection():
     def __init__(self):
-        self.host="tb9d2aw3wwwn.ap-south-2.psdb.cloud"
-        self.user="ujt56pt7i52s"
-        self.passwd="pscale_pw_9w_X1oJCAnmHmFRegjh4faOQxhax5ZAUXYjAxBUxmiw"
-        self.db_name="osaredai"
-        self.ssl={"ca": "./cacert.pem"}
+        self.host="#PlanetScale HostName"
+        self.user="#PlanetScale UserName"
+        self.passwd="#PlanetScale Password"
+        self.db_name="#PlanetScale DBName"
+        self.ssl={"ca": "#Path to ca"}
     def connect(self):
         self.db=MySQLdb.connect(
         host=self.host,

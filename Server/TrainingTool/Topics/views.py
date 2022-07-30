@@ -20,7 +20,7 @@ def createcb(name, topic_id):
         + '", "lang": "en", "private": true,"timezone": "Europe/Brussels"}'
     )
     headers = {
-        "Authorization": "Bearer OD7JXPJYFHFAK3QFVDJA3NH7ZDV4EEHB",
+        "Authorization": "Bearer # Admin Token From wit.ai",
         "Content-Type": "application/json",
     }
     response = requests.request("POST", url, headers=headers, data=payload)
