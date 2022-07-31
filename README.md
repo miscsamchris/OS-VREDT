@@ -69,11 +69,11 @@ OS VREDT is designed to be fun to use for users.
 
 #### Python Server
 1.  Navigate to `Server/TrainingTool/` and open __init__.py and update the PlanetScale connection details
-![Init.py](https://cdn.hashnode.com/res/hashnode/image/upload/v1659275132795/LNgAM9-Xy.png align="left")
+![Init.py](https://cdn.hashnode.com/res/hashnode/image/upload/v1659275132795/LNgAM9-Xy.png)
 2. Navigate to `Server/TrainingTool/Topics/` and open views.py and update the Authorization token
-![views.py](https://cdn.hashnode.com/res/hashnode/image/upload/v1659275500080/a25Owoviq.png align="left")
+![views.py](https://cdn.hashnode.com/res/hashnode/image/upload/v1659275500080/a25Owoviq.png)
 3. Navigate to `Server` and open app.py and update the host name with your IP address.
-![app.py](https://cdn.hashnode.com/res/hashnode/image/upload/v1659275624070/CnaiuBaLh.png align="left")
+![app.py](https://cdn.hashnode.com/res/hashnode/image/upload/v1659275624070/CnaiuBaLh.png)
 4. Open command prompt and navigate to `Server` and run the following commands
 ```
 python init_db.py
@@ -85,11 +85,11 @@ python app.py
 1. Open the Unity Project and configure the Visual Studio Project Settings.
 
 2. Update the URL to the Hostname of the server with the path in all of the scripts
-![URL](https://cdn.hashnode.com/res/hashnode/image/upload/v1659275921171/6YsC29u7g.png align="left")
+![URL](https://cdn.hashnode.com/res/hashnode/image/upload/v1659275921171/6YsC29u7g.png)
 3. Open the `File>Build Settings` and click on the `Build and Run` after connecting the mobile device
-![Build&Run](https://cdn.hashnode.com/res/hashnode/image/upload/v1659276454703/-p_RjhFPY.png align="left")
+![Build&Run](https://cdn.hashnode.com/res/hashnode/image/upload/v1659276454703/-p_RjhFPY.png)
 4. Save the apk file for distribution and build the file.
-![saveapk](https://cdn.hashnode.com/res/hashnode/image/upload/v1659277597620/sVMc150CR.png align="left")
+![saveapk](https://cdn.hashnode.com/res/hashnode/image/upload/v1659277597620/sVMc150CR.png)
 
 ## Important Links
 - [Live Demo](https://osvredt.herokuapp.com)
